@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Jquery Effects Fading</title>
+        <!--Masukkan Link Jquery dan Bootstrap 4-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!--Masukkan File Jquery-->
+        <script type="text/javascript" src="script.js"></script>
+        <!--Masukkan File CSS-->
+        <link rel="stylesheet" href="index.css">
+    </head>
+    
+    <body>
+        <div class="kotakLogin">
+            <h2>Javascript Form Validation</h2><br>
+            <form name="formval" onSubmit="return formjs();" action="https://google.com">
+                <div class="kotakUser">
+                    <span>Username</span>
+                    <input type="text" name="user" minlength="6" maxlength="8" placeholder="username" required>
+                </div>
+                
+                <div class="kotakUser">
+                    <span>Password</span>
+                    <input type="password" name="password" placeholder="password" minlength="8" maxlength="16" required>
+                </div>
+
+                <div class="kotakUser">
+                    <span>Email</span>
+                    <input type="email" name="email" required placeholder="example@mail.com">
+                </div>
+
+                <div class="kotakUser">
+                    <span>State:</span>
+                    <select type="text" class="form-control" id="state" required>
+                        <Option>Please Choose</Option>
+                        <Option>Surabaya</Option>
+                        <Option>Banyuwangi</Option>
+                        <option>Bali</option>
+                    </select>
+                </div>
+
+                <div class="kotakUser">
+                    <span>Address</span>
+                    <input type="text" name="address" required placeholder="your address">
+                </div>
+
+                <div class="kotakUser">
+                    <span>Zip Code</span>
+                    <input type="text" name="zipcode" maxlength="6" placeholder="ex: 678632" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-block waves-effect">Input Data</button>
+            </form>
+        </div>
+    </body>
+</html>

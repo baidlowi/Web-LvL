@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAM</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="blur">
+                <div id="jamku" class="waktu" onload="tampilanJam()"></div>
+            </div>
+            <div class="border">
+                <div class="ketikan">
+                    Bagaimana Kabarmu Hari Ini?
+                </div>
+            </div>
+        </div>
+        <script>
+            function tampilanJam(){
+                var tgl = new Date();
+                var h = tgl.getHours();
+                var m = tgl.getMinutes();
+                var s = tgl.getSeconds();
+                var sesi = "Pagi";
+                
+                if(h == 0){
+                    h = 12;
+                }
+                if(h > 12){
+                    h = h - 12;
+                    sesi = "Malam";
+                }
+                
+                h = (h < 10) ? "0" + h : h;
+                m = (m < 10) ? "0" + m : m;
+                s = (s < 10) ? "0" + s : s;
+                
+                var waktu = h + ":" + m + ":" + s + " " + sesi;
+                document.getElementById("jamku").innerText = waktu;
+                document.getElementById("jamku").textContent = waktu;
+                
+                setTimeout(tampilanJam, 1000);   
+            }
+            tampilanJam();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,51 @@
+body {
+    background: white;
+    align-content: center;
+}
+.blur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 500px;
+    margin: 0px auto;
+    background-color: rgba(26, 23, 23, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+}
+.waktu {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #002b35;
+    font-size: 60px;
+    font-family: Arial;
+    letter-spacing: 7px;
+}
+.border {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ketikan {
+    width: 24ch;
+    animation: ketik 3s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: Arial;
+    font-size: 2rem;
+}
+@keyframes ketik {
+    from {
+        width: 0
+    }
+}
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
