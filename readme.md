@@ -11,7 +11,7 @@
   - Download Composer <br>
     Download <a href=https://getcomposer.org/Composer-Setup.exe>Composer-installer</a>
   - Install Composer-installer.exe <br>
-    <img width="501" alt="image" src="https://user-images.githubusercontent.com/79616397/211326808-f60edc9f-509b-4a0b-8097-a4b149292aca.png">
+    <img width="501" alt="image" src="https://user-images.githubusercontent.com/79616397/211326808-f60edc9f-509b-4a0b-8097-a4b149292aca.png"><br>
     Use directory when you extract php
      
 - Download and extract .zip file code or clone repository :
